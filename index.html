@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drum Machine</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS for styling and layout-->
+    <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--CSS Style Sheet-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <main>
+      <!--Main Container-->
+      <div id="drum-machine" class="container rounded">
+        <!--Row Container-->
+        <div id="display" class="row">
+          <!--Drum Pad Column-->
+          <div class="col">
+            <!--First Row of Pads-->
+            <div class="row">
+                <div id="clip-one" class="drum-pad btn">
+                  <audio id="tambourine" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="tambourine-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">Q</p>
+                </div>
+                <div id="clip-two" class="drum-pad btn">
+                  <audio id="snare-drum" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="snare-drum-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">W</p>
+                </div>
+                <div id="clip-three" class="drum-pad btn">
+                  <audio id="rim-click" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="rim-click-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">E</p>
+                </div>
+            </div>
+            <!--Second Row of Pads-->
+            <div class="row">
+                <div id="clip-four" class="drum-pad btn">
+                  <audio id="closed-hh" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="closed-hh-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">A</p>
+                </div>
+                <div id="clip-five" class="drum-pad btn">
+                  <audio id="open-hh" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="open-hh-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">S</p>
+                </div>
+                <div id="clip-six" class="drum-pad btn">
+                  <audio id="cow-bell" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="cow-bell-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">D</p>
+                </div>
+            </div>
+            <!--Third Row of Pads-->
+            <div class="row">
+                <div id="clip-seven" class="drum-pad btn">
+                  <audio id="clap" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="clap-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">Z</p>
+                </div>
+                <div id="clip-eight" class="drum-pad btn">
+                  <audio id="guiro" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="guiro-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">X</p>
+                </div>
+                <div id="clip-nine" class="drum-pad btn">
+                  <audio id="bass-drum" class="clip first">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <audio id="bass-drum-2" class="clip second">
+                    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3" type="audio/mp3"/>
+                    Your browser does not support the HTML5 Audio element.
+                  </audio>
+                  <p class="pad-letter">C</p>
+                </div>
+            </div>
+          </div>
+
+          <!--Controls Column-->
+          <div class="col">
+            <!--Power Button-->
+            <div id="top-row" class="row ctrl-row">
+              <button id="power-button" class="btn btn-danger col"><span id="power-off">POWER OFF</span><span id="power-on">POWER ON</span></button>
+            </div>
+            <!--Bank Display-->
+            <div id="bank-display-container" class="row ctrl-row">
+              <div class="col">
+                <p id="bank-display" class="text-center"></p>
+              </div>
+            </div>
+            <!--Bank Toggle-->
+            <div class="row ctrl-row">
+              <button id="bank-toggle" class="btn btn-dark col"><span id="bank-one">BANK 1</span><span id="bank-two">BANK 2</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Load jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+
+    <!-- Link to JavaScript file -->
+    <script src="javascript.js"></script>
+  </body>
+
+</html>

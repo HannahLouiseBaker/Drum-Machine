@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #0D0F03;
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+#drum-machine {
+  border: solid orange 6px;
+  background-color: white;
+  height: 400px;
+  width: 700px;
+  padding: 40px 0;
+}
+
+.row {
+  margin: 0 10px;
+}
+
+/*Control Panel*/
+
+#top-row {
+  margin-top: 80px;
+}
+
+.ctrl-row {
+  margin: 5px;
+}
+
+.col {
+  margin: 0;
+  padding: 0;
+}
+
+.drum-pad {
+  background-color: grey;
+  /*border: solid black 2px;*/
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  box-shadow: 5px 5px 0px;
+  position: relative;
+}
+
+.pad-letter {
+  padding: 25px 0;
+}
+.green {
+  background-color: green;
+}
+
+#bank-display {
+  margin: 12px 0;
+}
+
+#bank-display-container {
+  height: 50px;
+  background-color: grey;
+}
