@@ -31,7 +31,7 @@ $(document).ready(() => {
         if ($("#bank-toggle").hasClass("bank-2")) {
          $("#bank-display").html("Roland CR-78");
         } else {
-          $("#bank-display").html("Casion PT30");
+          $("#bank-display").html("Casio RZ-1");
         }
       }
   });
