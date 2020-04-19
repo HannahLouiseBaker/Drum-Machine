@@ -1,11 +1,14 @@
 $(document).ready(() => {
 
   /*Power Button*/
-  $("#power-on").hide();
-
   $("#power-button").click(() => {
-    $("#power-on").toggle();
-    $("#power-off").toggle();
+    $("#power-button").toggleClass("on");
+    //$("#power-off").toggle();
+    if ($("#power-button").hasClass("on")) {
+      $("#power-button").html("POWER ON");
+    } else {
+      $("#power-button").html("POWER OFF");
+    }
     $("#power-button").toggleClass("btn-success");
     $("#power-button").toggleClass("btn-danger");
     $(".drum-pad").toggleClass("active");
@@ -13,19 +16,24 @@ $(document).ready(() => {
   });
 
   /*Bank Toggle*/
-  $("#bank-two").hide();
-
   $("#bank-toggle").click(() => {
-      if ($(".drum-pad").hasClass("active")) {    
-      $("#bank-one").toggle().toggleClass("active");
-      $("#bank-two").toggle().toggleClass("active");
-      $(".drum-pad").toggleClass("second-bank");
-      if ($("#bank-one").hasClass("active")) {
-       $("#bank-display").html("Bank Name 2");
-      } else {
-        $("#bank-display").html("Bank Name 1");
+      if ($(".drum-pad").hasClass("active")) {
+        //Bank 1 or Bank 2 shown on Button
+        $("#bank-toggle").toggleClass("bank-2");
+        if ($("#bank-toggle").hasClass("bank-2")) {
+          $("#bank-toggle").html("BANK 2");
+        } else {
+          $("#bank-toggle").html("BANK 1");
+        }
+
+        //Bank Display
+        $(".drum-pad").toggleClass("second-bank");
+        if ($("#bank-toggle").hasClass("bank-2")) {
+         $("#bank-display").html("Roland CR-78");
+        } else {
+          $("#bank-display").html("Casion PT30");
+        }
       }
-    }
   });
 
   /*Trigger Audio by Pressing Button*/
