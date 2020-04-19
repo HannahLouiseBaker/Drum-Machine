@@ -13,13 +13,19 @@ main {
   border: solid orange 6px;
   background-color: white;
   height: 400px;
-  width: 700px;
+  width: 650px;
   padding: 40px 0;
 }
 
-.row {
+/*.row {
   margin: 0 10px;
+}*/
+
+.pad-row {
+  margin-left: 40px;
+  margin-right: 10px;
 }
+
 
 /*Control Panel*/
 
@@ -28,7 +34,8 @@ main {
 }
 
 .ctrl-row {
-  margin: 5px;
+  margin: 5px 15px 5px 0;
+  width: 210px;
 }
 
 .col {
@@ -49,9 +56,6 @@ main {
 .pad-letter {
   padding: 25px 0;
 }
-.green {
-  background-color: green;
-}
 
 #bank-display {
   margin: 12px 0;
@@ -60,4 +64,58 @@ main {
 #bank-display-container {
   height: 50px;
   background-color: grey;
+}
+
+@media (max-height: 580px) {
+  main {
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  /*#drum-machine {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }*/
+}
+
+@media (max-width: 995px) {
+  .row {
+    margin: 0 5px;
+  }
+
+  .ctrl-row {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    background-color: #0D0F03;
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;    
+  }
+
+  #drum-machine {
+    height: 560px;
+    width: 450px;
+    padding: 40px 0;
+  }
+
+  .pads-column {
+    margin: 0 40px;
+  }
+
+  .ctrl-column {
+    margin-top: -30px;
+  }
+
+  .ctrl-row {
+    margin: 5px 95px;
+  }
+
+  /*.row {
+    border: solid black 1px;
+  }*/
 }
